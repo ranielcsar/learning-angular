@@ -1,0 +1,56 @@
+mat-toolbar {
+  margin-bottom: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.mat-mdc-card {
+  box-shadow: none;
+  min-height: 60px;
+  border-radius: 4px;
+  padding: 10px;
+  background: lightgray;
+}
+
+.content-wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  width: 400px;
+  margin: 0 25px 25px 0;
+  box-shadow: none;
+}
+
+app-new-task {
+  margin-bottom: 30px;
+}
+
+.empty-label {
+  font-size: 2em;
+  padding-top: 10px;
+  text-align: center;
+  opacity: 0.4;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms;
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
