@@ -1,0 +1,32 @@
+<main>
+  <header>
+    <img src="../assets/logo.svg" alt="Fairhouse logo" /> Fairhouse
+  </header>
+
+  <section>
+    <app-housing-list
+      [locationList]="housingLocationList"
+      (locationSelectedEvent)="updateSelectedLocation($event)"
+    ></app-housing-list>
+
+    <article>
+      <ng-container *ngIf="selectedLocation">
+        <img
+          [src]="selectedLocation?.photo"
+          width="200"
+          height="450"
+          [alt]="selectedLocation?.name + ' photo'"
+        />
+        <p>{{ selectedLocation?.name }}</p>
+        <p>{{ selectedLocation?.availableUnits }}</p>
+        <p>{{ selectedLocation?.city }}, {{ selectedLocation?.state }}</p>
+        <p>
+          {{
+            selectedLocation?.laundry ? "Has laundry" : "Does Not have laundry"
+          }}
+        </p>
+        <p>{{ selectedLocation?.wifi ? "Has wifi" : "Does Not have wifi" }}</p>
+      </ng-container>
+    </article>
+  </section>
+</main>
