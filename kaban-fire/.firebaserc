@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kabanfire-3ed1f": {
+      "hosting": {
+        "kaban-fire": [
+          "kabanfire-3ed1f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kabanfire-3ed1f"
+  }
+}
